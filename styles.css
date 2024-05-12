@@ -5,7 +5,12 @@
 :root {
   --cell-size: 100px;
   --mark-size: calc(var(--cell-size) * .9);
+  --hue: 200;
+  --saturation: 50%;
+  --foreground-color: hsl(var(--hue), var(--saturation), 75%);
+  --background-color: hsl(var(--hue), var(--saturation), 20%);
 }
+
 
 body {
   margin: 0;]
