@@ -1,3 +1,5 @@
+var p1= document.getElementById("p1")
+var p2= document.getElementById("p2")
 const X_CLASS = 'x'
 const CIRCLE_CLASS = 'circle'
 const WINNING_COMBINATIONS = [
@@ -27,6 +29,8 @@ function startGame() {
     cell.classList.remove(X_CLASS)
     cell.classList.remove(CIRCLE_CLASS)
     cell.removeEventListener('click', handleClick)
+    var p1=0
+    var p2=0
     cell.addEventListener('click', handleClick, { once: true })
   })
   setBoardHoverClass()
@@ -51,7 +55,7 @@ function endGame(draw) {
   if (draw) {
     winningMessageTextElement.innerText = 'Draw!'
   } else {
-    winningMessageTextElement.innerText = `${circleTurn ? "O" : "X"} Wins!`
+    winningMessageTextElement.innerText = `${circleTurn ? p2: p1} Wins!`
   }
   winningMessageElement.classList.add('show')
 }
