@@ -52,12 +52,17 @@ function handleClick(e) {
 }
 
 function endGame(draw) {
-  if (draw) {
-    winningMessageTextElement.innerText = 'Draw!'
-  } else {
-    winningMessageTextElement.innerText = `${circleTurn ? p2: p1} Wins!`
-  }
-  winningMessageElement.classList.add('show')
+ if (draw) {
+        winningMessageTextElement.innerText = 'Draw!';
+    } else {
+        winningMessageTextElement.innerText = $ {
+            circleTurn ? p2 : p1
+        }
+        Wins!;
+    }
+    winningMessageElement.classList.add('show');
+}
+
 }
 
 function isDraw() {
