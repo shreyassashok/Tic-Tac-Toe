@@ -1,5 +1,5 @@
-var p1= document.getElementById("p1")
-var p2= document.getElementById("p2")
+var p1= document.getElementById("p1").value
+var p2= document.getElementById("p2").value
 const X_CLASS = 'x'
 const CIRCLE_CLASS = 'circle'
 const WINNING_COMBINATIONS = [
